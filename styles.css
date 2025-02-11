@@ -1,0 +1,348 @@
+/* Resetando algumas configurações padrões */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Configurações gerais */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Estilo para a seção de endereços */
+.stores-address {
+    padding: 20px;
+}
+
+.stores-address h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.stores-address ul {
+    list-style: none;
+}
+
+.stores-address ul li {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* Estilo para a seção de imagens de posts */
+.instagram-feed {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 10px;
+    padding: 20px;
+}
+
+.instagram-feed img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+
+/* Responsividade para telas menores que 768px (telas de dispositivos móveis) */
+@media (max-width: 768px) {
+    /* Ajusta o título da seção */
+    .stores-address h2 {
+        font-size: 20px;
+    }
+
+    /* Reduz a fonte dos endereços */
+    .stores-address ul li {
+        font-size: 14px;
+    }
+
+    /* Faz com que as imagens se ajustem para caber em telas menores */
+    .instagram-feed {
+        justify-content: center;
+    }
+
+    .instagram-feed img {
+        max-width: 100%;
+    }
+}
+
+/* Responsividade para telas menores que 480px (telas de smartphones) */
+@media (max-width: 480px) {
+    /* Ajusta o título da seção */
+    .stores-address h2 {
+        font-size: 18px;
+    }
+
+    /* Reduz mais a fonte dos endereços */
+    .stores-address ul li {
+        font-size: 12px;
+    }
+
+    /* Faz as imagens se ajustarem ainda mais para telas pequenas */
+    .instagram-feed img {
+        max-width: 100%;
+        margin-bottom: 15px;
+    }
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'baloo', sans-serif;
+    background: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #e60012;
+    color: white;
+    padding: 50px 20px;
+    gap: 20px;
+}
+
+.header img {
+    width: 300px;
+}
+
+.header .mascot {
+    width: 210px;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.header h1 {
+    margin-bottom: 10px;
+}
+
+.header p {
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #ffcc00;
+    color: #e60012;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    text-decoration: none;
+    border-radius: 15px;
+    box-shadow: 0px 8px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+    background-color: #e60012;
+    color: white;
+    transform: scale(1.1);
+}
+
+.section {
+    padding: 40px 20px;
+    background: #faeaea;
+    margin: 20px auto;
+    border-radius: 10px;
+    max-width: 1200px;
+}
+
+.section h2 {
+    font-size: 2.5em;
+    color: #e60012;
+    margin-bottom: 15px;
+}
+
+.section p {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.banner {
+    position: relative;
+    max-width: 1200px;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.banner img {
+    width: 100%;
+    display: none;
+    border-radius: 10px;
+}
+
+.banner img.active {
+    display: block;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+.instagram-feed {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.instagram-feed img {
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
+}
+
+.numbers {
+    background: #e60012;
+    color: white;
+    padding: 40px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+.numbers h3 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+}
+
+.numbers p {
+    font-size: 1.5em;
+}
+
+.contact-info a {
+    color: #e60012;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.stores-address {
+    background: #f8f8f8;
+    padding: 40px 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    max-width: 1200px;
+}
+
+.stores-address h2 {
+    font-size: 2.5em;
+    color: #e60012;
+    margin-bottom: 20px;
+}
+
+.stores-address ul {
+    list-style: none;
+    padding: 0;
+}
+
+.stores-address li {
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #333;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .banner img {
+        height: 250px;
+    }
+
+    .instagram-feed img {
+        width: 100%;
+        height: auto;
+    }
+}
+/* Estilo do Rodapé */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-info {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.footer-info p {
+    margin: 5px 0;
+}
+
+.footer-social {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-social a img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+.footer-social a img:hover {
+    transform: scale(1.2);
+}
+
+/* Responsividade para telas menores que 768px (telas de dispositivos móveis) */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-social {
+        margin-top: 10px;
+    }
+
+    .footer-info p {
+        font-size: 12px;
+    }
+}
